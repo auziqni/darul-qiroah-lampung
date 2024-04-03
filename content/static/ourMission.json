@@ -1,0 +1,20 @@
+[
+  {
+    "title": "BERANTAS BUTA AKSARA",
+    "content": "Melakukan upaya nyata untuk memberantas buta aksara dengan pendidikan Al-Quran yang inklusif dan berkelanjutan.",
+    "imgsrc": "/icons/berantas-buta-aksara.svg",
+    "variant": "light"
+  },
+  {
+    "title": "METODE SUPER CEPAT",
+    "content": "Metode revolusioner kami memungkinkan pembelajaran Al-Quran dengan efisien, super cepat, mudah, dan menyenangkan",
+    "imgsrc": "/icons/metode-super-cepat.svg",
+    "variant": "dark"
+  },
+  {
+    "title": "KESEJAHTERAAN GURU NGAJI",
+    "content": "Meningkatkan kesejahteraan guru mengaji melalui program dukungan finansial, pelatihan, dan kesejahteraan sosial.",
+    "imgsrc": "/icons/kesejahteraan-guru.svg",
+    "variant": "light"
+  }
+]

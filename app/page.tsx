@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import DataOurMission from "@/content/static/ourMission.json";
+import CardOurMission from "@/components/landingPage/cardOurMission";
+import { SectionHead, SectionTag } from "@/components/landingPage/textStyling";
 
 export default function Home() {
   return (
@@ -14,7 +17,7 @@ export default function Home() {
           </h2>
 
           <div className=" flex gap-3 mt-5">
-            <Button className="bg-green-200 text-black font-bold">
+            <Button className="bg-green-200 text-black font-bold ">
               Daftar Sekarang
             </Button>
             <Button className="bg-green-500">Donasi</Button>
@@ -33,7 +36,21 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div id="section 2" className="bg-slate-100 h-screen"></div> */}
+      <div
+        id="our-mission"
+        className="bg-slate-100 h-screen flex  flex-col items-center gap-10"
+      >
+        <div className=" flex flex-col gap-3 pt-10">
+          <SectionTag>Apa Yang Kami Lakukan</SectionTag>
+          <SectionHead>KAMI MEMBANTU PENGAJAR LEBIH PROFESIONAL</SectionHead>
+        </div>
+
+        {DataOurMission.map((item: DataOurMission, index: number) => (
+          <div key={index}>
+            <CardOurMission item={item} />
+          </div>
+        ))}
+      </div>
     </main>
   );
 }

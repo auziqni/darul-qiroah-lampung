@@ -70,7 +70,7 @@ export default function Helpscreen() {
   }, []);
 
   return (
-    <main className=" flex flex-col gap-3">
+    <main className=" flex flex-col gap-3 sticky top-0 z-10">
       <div className={`${screenMode?.style} h-20 w-full`}>
         <h1>
           {" "}

@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className=" text-3xl font-bold text tracking-wide">
             PENDIDIKAN AL-QURAN <br /> INVESTASI ABADI
           </h1>
-          <h2 className=" text-md text-slate-400">
+          <h2 className=" text-md text-slate-400 sm:w-auto md:w-96 lg:w-auto">
             Dengan Meningkatkan kompetensi guru mengaji untuk generasi qurani
           </h2>
 
@@ -24,8 +24,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute right-0 top-0 w-2/5 -z-10 ">
-          <div className=" relative h-60  rounded-bl-full overflow-hidden ">
+        <div className="absolute right-0 top-0 w-2/5 -z-10 md:top-20 md:w-1/2 ">
+          <div className=" relative h-60 rounded-bl-full overflow-hidden md:rounded-l-full md:h-80 ">
             <Image
               src={"/images/hero-image.jpg"}
               alt="bg"

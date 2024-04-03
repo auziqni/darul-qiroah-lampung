@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { LuMenu, LuWaves } from "react-icons/lu";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,15 +31,35 @@ export default function Navbar() {
       {/* logo end */}
 
       {/* navigation desktop */}
-      <div id="nav-desktop" className="hidden sm:block">
-        item
+      <div
+        id="nav-desktop"
+        className="hidden md:flex flex-row gap-8 items-center"
+      >
+        <ul className=" flex flex-row gap-8 cursor-pointer">
+          <li className="hover:border-b border-green-500 hover:text-green-500">
+            Beranda
+          </li>
+          <li className="hover:border-b border-green-500 hover:text-green-500">
+            Tentang Kami
+          </li>
+          <li className="hover:border-b border-green-500 hover:text-green-500">
+            Buku Qiroah
+          </li>
+          <li className="hover:border-b border-green-500 hover:text-green-500">
+            Program
+          </li>
+          <li className="hover:border-b border-green-500 hover:text-green-500">
+            Artikel
+          </li>
+        </ul>
+        <Button className="bg-green-500 px-14 py-6">Donasi</Button>
       </div>
       {/* navigation desktop end */}
 
       {/* navigation mobile */}
       <div
         id="nav-mobile"
-        className="sm:hidden cursor-pointer"
+        className="md:hidden cursor-pointer"
         onClick={toggleNavbar}
       >
         {isOpen ? <LuWaves size={32} /> : <LuMenu size={32} />}

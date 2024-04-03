@@ -50,22 +50,22 @@ export default function Navbar() {
         id="nav-mobile-menu"
         className={`${
           isOpen ? "block" : "hidden"
-        } sm:hidden bg-white absolute left-0 right-0 top-16 shadow-xl`}
+        } sm:hidden bg-white absolute flex  flex-col items-center py-5 z-10 left-0 right-0 top-16 shadow-xl`}
       >
-        <ul className="flex flex-col items-center h-auto gap-5 py-5">
-          <li className="">
+        <ul className="flex flex-col items-center h-auto gap-8 py-5 mb-8">
+          <li className="border-b-2 hover:border-green-400 hover:text-green-800">
             <Link href={"/"}>Home</Link>
           </li>
-          <li className="">
+          <li className="border-b-2 hover:border-green-400 hover:text-green-800">
             <Link href={"/about"}>About</Link>
           </li>
-          <li className="">
+          <li className="border-b-2 hover:border-green-400 hover:text-green-800">
             <Link href={"/contact"}>Contact</Link>
           </li>
         </ul>
         <div>
           <button
-            className="bg-green-500 text-white px-4 py-2 w-full font-bold"
+            className="bg-green-500 text-white w-96 py-2  font-bold"
             onClick={toggleNavbar}
           >
             Donasi

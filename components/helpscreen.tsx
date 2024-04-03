@@ -37,14 +37,14 @@ export default function Helpscreen() {
         });
       } else if (window.innerWidth >= 1280 && window.innerWidth < 1536) {
         setScreenMode({
-          tittle: "Large",
+          tittle: "Extra Large",
           widht: window.innerWidth,
           height: window.innerHeight,
           style: "bg-red-200",
         });
       } else if (window.innerWidth >= 1536) {
         setScreenMode({
-          tittle: "Extra Large",
+          tittle: "Ultra Extra Large",
           widht: window.innerWidth,
           height: window.innerHeight,
           style: "bg-purple-200",
@@ -73,7 +73,6 @@ export default function Helpscreen() {
     <main className=" flex flex-col gap-3 sticky top-0 z-10">
       <div className={`${screenMode?.style} h-20 w-full`}>
         <h1>
-          {" "}
           saya w= {screenMode?.widht}, h= {screenMode?.height}
         </h1>
         <p>Saya dalam mode layar {screenMode?.tittle}</p>

@@ -45,11 +45,13 @@ export default function Home() {
           <SectionHead>KAMI MEMBANTU PENGAJAR LEBIH PROFESIONAL</SectionHead>
         </div>
 
-        {DataOurMission.map((item: DataOurMission, index: number) => (
-          <div key={index}>
-            <CardOurMission item={item} />
-          </div>
-        ))}
+        <div className=" grid grid-cols-1 gap-10 lg:grid-cols-3 ">
+          {DataOurMission.map((item: DataOurMission, index: number) => (
+            <div key={index}>
+              <CardOurMission item={item} />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div id="about-us" className=" py-10 flex flex-col gap-10">

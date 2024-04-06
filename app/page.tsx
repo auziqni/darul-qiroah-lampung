@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div
+      {/* <div
         id="our-mission"
         className="bg-blue-50  flex  flex-col items-center gap-10 py-10"
       >
@@ -89,7 +89,7 @@ export default function Home() {
             objectFit="cover"
           />
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }

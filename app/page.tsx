@@ -7,16 +7,16 @@ import { SectionHead, SectionTag } from "@/components/landingPage/textStyling";
 export default function Home() {
   return (
     <main className="">
-      <div id="hero" className="relative">
+      {/* <div id="hero" className="relative">
         <div className=" flex flex-col   px-10 pt-40 gap-5 pb-20">
-          <h1 className=" text-3xl font-bold text tracking-wide">
+          <h1 className=" text-3xl xl:text-4xl 2xl:text-5xl font-bold text tracking-wide">
             PENDIDIKAN AL-QURAN <br /> INVESTASI ABADI
           </h1>
-          <h2 className=" text-md text-slate-400 sm:w-auto md:w-96 lg:w-auto">
+          <h2 className=" text-md xl:text-lg text-slate-400 sm:w-auto md:w-96 lg:w-auto">
             Dengan Meningkatkan kompetensi guru mengaji untuk generasi qurani
           </h2>
 
-          <div className=" flex gap-3 mt-5">
+          <div className=" flex gap-3 mt-5 xl:text-lg">
             <Button className="bg-green-200 text-black font-bold ">
               Daftar Sekarang
             </Button>
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="absolute right-0 top-0 w-2/5 -z-10 md:top-20 md:w-1/2 ">
-          <div className=" relative h-60 rounded-bl-full overflow-hidden md:rounded-l-full md:h-80 ">
+          <div className=" relative h-60 lg:h-[700px] rounded-bl-full overflow-hidden md:rounded-l-full md:h-80 ">
             <Image
               src={"/images/hero-image.jpg"}
               alt="bg"
@@ -34,7 +34,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         id="our-mission"

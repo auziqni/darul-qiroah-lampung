@@ -16,7 +16,9 @@ export default function SecHero({ className }: { className?: string }) {
         </h2>
 
         <div className=" flex gap-3 mt-5 xl:text-lg">
-          <ButtonPrimary>daftar sekarang</ButtonPrimary>
+          <ButtonPrimary className="bg-bgfooter text-white">
+            daftar sekarang
+          </ButtonPrimary>
           <ButtonPrimary>donasi</ButtonPrimary>
         </div>
       </div>

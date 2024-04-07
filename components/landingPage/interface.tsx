@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { twMerge } from "tailwind-merge";
 
 interface CustomHeadingProps {
   children: React.ReactNode;
@@ -9,7 +10,10 @@ interface CustomHeadingProps {
 export function ButtonPrimary({ children, className }: CustomHeadingProps) {
   return (
     <Button
-      className={`${className} bg-green-500 px-14 py-4 capitalize font-bold`}
+      className={twMerge(
+        " bg-green-500 px-14 py-4 capitalize font-bold",
+        className
+      )}
     >
       {children}
     </Button>

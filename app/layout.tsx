@@ -8,6 +8,9 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: "Yayasan Darul Qiroah Lampung",
   description:
     "Qiroah Lampung adalah sebuah yayasan non-profit yang berfokus pada pendidikan agama khususnya pembelajaran Al-Quran, serta sebagai tempat penyalur donasi untuk mendukung program-program pendidikan dan kegiatan sosial di Lampung.",

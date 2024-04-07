@@ -1,12 +1,17 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import DataOurMission from "@/content/static/ourMission.json";
-import CardOurMission from "@/components/landingPage/cardOurMission";
-import { SectionHead, SectionTag } from "@/components/landingPage/textStyling";
+
+import SecHero from "@/components/landingPage/secHero";
+import SecOurMission from "@/components/landingPage/secOurMission";
+import SecAboutUs from "@/components/landingPage/secAboutUs";
 
 export default function Home() {
   return (
     <main className="">
+      <SecHero />
+      <SecOurMission />
+      <SecAboutUs />
+
       {/* <div id="hero" className="relative">
         <div className=" flex flex-col   px-10 pt-40 gap-5 pb-20">
           <h1 className=" text-3xl xl:text-4xl 2xl:text-5xl font-bold text tracking-wide">

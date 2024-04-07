@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
+import { ButtonPrimary } from "@/components/landingPage/interface";
 
 export default function NavbarDesktop({ className }: { className?: string }) {
   return (
@@ -22,7 +22,7 @@ export default function NavbarDesktop({ className }: { className?: string }) {
           Artikel
         </li>
       </ul>
-      <Button className="bg-green-500 px-14 py-6">Donasi</Button>
+      <ButtonPrimary>Donasi</ButtonPrimary>
     </div>
   );
 }

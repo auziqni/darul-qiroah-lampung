@@ -8,12 +8,12 @@ import NavbarMobile from "./navbarMobile";
 export default function Navbar() {
   return (
     <nav
-      className={` bg-white h-16 lg:h-[100px]  shadow-lg flex justify-between items-center px-3 md:px-14 `}
+      className={` bg-white h-16 lg:h-[100px]  shadow-sm flex justify-between items-center px-3 md:px-14 `}
     >
       {/* logo */}
       <Link
         id="nav-logo"
-        className=" relative h-[50px] w-[50px]  lg:h-[80px] lg:w-[80px]"
+        className=" relative h-[50px] w-[50px]  lg:h-[65px] lg:w-[65px]"
         href={"/"}
       >
         <Image src="/logo.png" alt="logo" fill className="cursor-pointer" />

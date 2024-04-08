@@ -11,8 +11,8 @@ export function ButtonPrimary({ children, className }: CustomHeadingProps) {
   return (
     <Button
       className={twMerge(
-        " bg-green-500 px-14 py-4 capitalize font-bold",
-        className
+        " w-fit bg-green-500 px-14 py-4 font-bold capitalize",
+        className,
       )}
     >
       {children}

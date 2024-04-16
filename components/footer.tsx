@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { BiLogoTwitter, BiLogoInstagram, BiLogoFacebook } from "react-icons/bi";
 
 export default function Footer() {
   return (
-    <footer id="footer" className=" bg-blue-950 pt-10 px-10 text-white ">
-      <div id="link" className="grid grid-cols-1 gap-14">
+    <footer id="footer" className=" bg-bgfooter px-10 pt-10 text-white ">
+      <div id="link" className="grid grid-cols-1 gap-14 text-textfooter">
         {/* logo */}
         <div className=" flex flex-row gap-5 ">
           <Link id="nav-logo" className="" href={"/"}>
@@ -17,7 +18,7 @@ export default function Footer() {
               className="cursor-pointer"
             />
           </Link>
-          <div className="flex flex-col justify-center text-2xl font-bold">
+          <div className="flex flex-col justify-center text-2xl font-bold text-white">
             <h3>Darul Qiroah</h3>
             <h3>Lampung</h3>
           </div>
@@ -25,31 +26,43 @@ export default function Footer() {
         {/* logo end */}
 
         <div id="navigation">
-          <h3 className=" text-xl mb-6">Navigasi</h3>
+          <h3 className=" mb-6 text-xl text-white ">Navigasi</h3>
 
-          <ul className=" text text-slate-400 flex flex-col gap-4 ">
+          <ul className=" text flex flex-col gap-4 text-slate-400 ">
+            <li>Beranda</li>
             <li>Tentang Kami</li>
             <li>Buku Qiroah</li>
+            <li>Program</li>
+            <li>Artikel</li>
+            <li>Kontak</li>
             <li>Donasi</li>
           </ul>
         </div>
 
         <div id="contact">
-          <div id="office">
-            <h3 className=" text-xl mb-6">Kontak</h3>
-            <ul className=" text text-slate-400 flex flex-col gap-4 ">
-              <li>Email : darulqiroahlampung@gmail.com</li>
-              <li>Phone : +62 822 0000 0000</li>
-              Alamat : Jl. Kapten Abdul Haq No.17A, Gang Banten, Kec. Rajabasa,
-              Kota Bandar Lampung, Lampung 35144
-            </ul>
+          <h3 className=" mb-6 text-xl text-white">Kontak</h3>
+          <ul className=" text flex flex-col gap-4 text-slate-400 ">
+            <li>Email : darulqiroahlampung@gmail.com</li>
+            <li>Phone : +62 822 0000 0000</li>
+            Alamat : Jl. Kapten Abdul Haq No.17A, Gang Banten, Kec. Rajabasa,
+            Kota Bandar Lampung, Lampung 35144
+          </ul>
+        </div>
+
+        <div id="Medsos">
+          <h3 className=" mb-6 text-xl text-white ">Media Sosial</h3>
+
+          <div className=" flex flex-row gap-3">
+            <BiLogoTwitter className="cursor-pointer text-3xl text-slate-400" />
+            <BiLogoInstagram className="cursor-pointer text-3xl text-slate-400" />
+            <BiLogoFacebook className="cursor-pointer text-3xl text-slate-400" />
           </div>
-          <div id="social-media"></div>
         </div>
       </div>
+
       <div
         id="copyrigt"
-        className=" mt-16 pt-3 border-t border-slate-500 text-slate-500 text-sm text-center"
+        className=" mt-16 border-t border-slate-500 pt-3 text-center text-sm text-slate-500"
       >
         copyright &copy;2024 Yayasan Darul Qiroah Lampung | Teknisee. <br />{" "}
         Seluruh hak cipta dilindungi undang-undang.

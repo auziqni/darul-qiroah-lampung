@@ -1,9 +1,10 @@
 import React from "react";
 import { SectionHead, SectionTag } from "@/components/landingPage/textStyling";
 import { twMerge } from "tailwind-merge";
-import datas from "@/content/blog/mock.json";
-import CardPost from "@/components/landingPage/cardPost";
+import { CardPost } from "@/components/landingPage/cardPost";
 import { posts } from "#site/content";
+import Link from "next/link";
+import { FaAngleDown } from "react-icons/fa6";
 
 // const posts : post[] = datas.filter((post) => post.id === 1);
 //kluarkan hanya post id 1
@@ -39,6 +40,11 @@ export default function SecLatestBlog({ className }: { className?: string }) {
         {newpost.map((post) => (
           <CardPost key={post.id} post={post} />
         ))}
+      </div>
+
+      <div className="flex flex-col items-center hover:text-green-500 ">
+        <Link href={"/blog"}>Lebih Banyak</Link>
+        <FaAngleDown />
       </div>
     </div>
   );

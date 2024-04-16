@@ -1,13 +1,14 @@
-import type { Config } from "tailwindcss"
+import { text } from "stream/consumers";
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -52,6 +53,13 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        utama: "#09CC7F",
+        textheading: "#002D5B",
+        textsubheading: "#464D65",
+        bgprimary: "#FFFFFF",
+        bgsecondary: "#F8FCFF",
+        bgfooter: "#010A1F",
+        textfooter: "#868C98",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,9 +80,23 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontSize: {
+        u10: "0.625rem",
+        u13: "0.8125rem",
+        u15: "0.9375rem",
+        u16: "1rem",
+        u20: "1.25rem",
+        u25: "1.5625rem",
+        u28: "1.75rem",
+        u31: "1.9375rem",
+        u39: "2.4375rem",
+        u49: "3.0625rem",
+        u61: "3.8125rem",
+        u76: "4.75rem",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+} satisfies Config;
 
-export default config
+export default config;

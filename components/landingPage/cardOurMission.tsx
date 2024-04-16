@@ -10,7 +10,7 @@ export default function CardOurMission({ item }: CardProps) {
     <div
       className={`${
         item.variant === "light" ? "bg-white" : "bg-green-500"
-      } w-[440px] border  rounded-lg shadow-lg flex items-center flex-col px-10 py-20 gap-16`}
+      } min-w-[320px] max-w-[500px] lg:w-[360px]  border  rounded-lg shadow-lg flex items-center flex-col px-10 py-20 gap-16 justify-self-center`}
     >
       <div
         className={`${

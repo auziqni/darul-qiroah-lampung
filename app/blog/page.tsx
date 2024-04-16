@@ -1,6 +1,13 @@
 import React from "react";
 import { CardPost, CardPostLarge } from "@/components/landingPage/cardPost";
 import { posts } from "#site/content";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Artikel Darul Qiroah Lampung",
+  description:
+    "Artikel-artikel terbaru dari Darul Qiroah Lampung, berbagai topik menarik seputar pendidikan, keislaman, dan kegiatan sosial.",
+};
 
 export default function Blog() {
   const newpost: Post[] = posts

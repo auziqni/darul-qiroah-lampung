@@ -5,6 +5,7 @@ import { MDXContent } from "@/components/blog/mdx-components";
 import { Tag } from "@/components/blog/tag";
 import Image from "next/image";
 import fs from "fs";
+import { revalidatePath, revalidateTag } from "next/cache";
 // import "@/styles/mdx.css";
 
 interface PostPageProps {
@@ -20,8 +21,17 @@ async function getPostFromParams(params: PostPageProps["params"]) {
   return post;
 }
 
+export const generateStaticParams = () => {
+  return posts.map((post) => ({
+    params: {
+      slug: post.slug,
+    },
+  }));
+};
+
 export default async function BlogPost({ params }: PostPageProps) {
   const post = await getPostFromParams(params);
+  revalidatePath("/blog/[slug]", "page");
   let image = post?.image;
 
   fs.existsSync("public" + post?.image)
@@ -34,7 +44,7 @@ export default async function BlogPost({ params }: PostPageProps) {
     notFound();
   }
   return (
-    <article className="prose dark:prose-invert container mx-auto flex max-w-3xl flex-col py-6">
+    <article className="container prose mx-auto flex max-w-3xl flex-col py-6 dark:prose-invert">
       <div className="relative -z-10 mb-10 h-96 w-full">
         <Image
           src={image}

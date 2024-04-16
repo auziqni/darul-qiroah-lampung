@@ -9,11 +9,14 @@ export default function SecAboutUs({ className }: { className?: string }) {
     <div
       id="SectionAboutUs"
       className={twMerge(
-        ` flex flex-col gap-[30px] px-[15px] py-[40px]`,
+        ` my-[90px] flex flex-col gap-[30px] lg:my-[120px] lg:flex-row lg:items-center lg:justify-center`,
         className,
       )}
     >
-      <div id="heading" className="flex  flex-col gap-[30px]">
+      <div
+        id="heading"
+        className="relative flex  flex-col gap-[30px] lg:max-w-[750px]"
+      >
         <div className=" flex flex-col gap-4 sm:mx-[25px] ">
           <SectionTag>Tentang Yayasan Kami</SectionTag>
           <SectionHead>
@@ -21,7 +24,10 @@ export default function SecAboutUs({ className }: { className?: string }) {
           </SectionHead>
         </div>
 
-        <div className="flex flex-col gap-3 text-justify sm:mx-[25px]">
+        <div
+          id=""
+          className="mx-[15px] flex flex-col gap-3 text-justify sm:mx-[25px] md:w-[510px] lg:w-full lg:pr-10 "
+        >
           <p className=" ">
             Selamat datang di{" "}
             <span className="cursor-pointer text-green-600 hover:text-blue-800">
@@ -48,8 +54,8 @@ export default function SecAboutUs({ className }: { className?: string }) {
         </div>
       </div>
 
-      <div className="relative flex h-fit flex-row items-end justify-end border">
-        <div className="relative z-10 hidden h-[190px] w-[165px] translate-x-1/3  translate-y-1/3 overflow-clip rounded-bl-lg border-r-8 border-t-8 border-utama lg:block">
+      <div className="relative flex h-fit flex-row items-end justify-end  lg:justify-center">
+        <div className="relative z-10 hidden h-[260px] w-[220px] translate-x-1/3  translate-y-1/3 overflow-clip rounded-bl-lg border-r-8 border-t-8 border-utama lg:block">
           <Image
             src={"/images/hero-image.jpg"}
             alt="bg"
@@ -57,7 +63,7 @@ export default function SecAboutUs({ className }: { className?: string }) {
             objectFit="cover"
           />
         </div>
-        <div className=" relative h-64 w-full overflow-clip rounded-xl  md:h-[300px] md:w-[250px]">
+        <div className=" relative h-64 w-full overflow-clip rounded-xl  lg:h-[400px] lg:w-[300px]">
           <Image
             src={"/images/hero-image.jpg"}
             alt="bg"

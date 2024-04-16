@@ -10,7 +10,7 @@ export default function SecData({ className }: { className?: string }) {
       )}
     >
       <div className="absolute inset-0  h-screen w-screen bg-green-600 opacity-70"></div>
-      <div className="z-10  grid grid-cols-1 gap-[75px] text-white">
+      <div className="z-10  grid grid-cols-1 gap-[75px] text-white md:grid-cols-2 lg:grid-cols-4">
         <Content angka={150} desc={"Guru Bimbingan"} />
         <Content angka={21} desc={"Seminar"} />
         <Content angka={50000000} desc={"Donasi"} className="text-u31" />

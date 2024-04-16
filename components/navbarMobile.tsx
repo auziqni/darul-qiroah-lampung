@@ -15,10 +15,14 @@ export default function NavbarMobile({ className }: { className?: string }) {
       {/* navigation mobile */}
       <div
         id="nav-mobile"
-        className="md:hidden cursor-pointer"
+        className="cursor-pointer md:hidden"
         onClick={toggleNavbar}
       >
-        {isOpen ? <LuWaves size={32} /> : <LuMenu size={32} />}
+        {isOpen ? (
+          <LuWaves size={32} className="text-green-500" />
+        ) : (
+          <LuMenu size={32} className="text-green-500" />
+        )}
       </div>
       {/* navigation mobile end */}
 
@@ -27,22 +31,43 @@ export default function NavbarMobile({ className }: { className?: string }) {
         id="nav-mobile-menu"
         className={`${
           isOpen ? "block" : "hidden"
-        } md:hidden bg-white absolute flex border-t-2  flex-col items-center py-5 z-10 left-0 right-0 top-16 shadow-xl`}
+        } absolute left-0 right-0 top-16 z-20  flex flex-col items-center border-t-2 bg-white py-5 shadow-xl md:hidden`}
       >
-        <ul className="flex flex-col items-center h-auto gap-8 py-5 mb-8">
+        <ul className="mb-8 flex h-auto flex-col items-center gap-8 py-5">
           <li className="border-b-2 hover:border-green-400 hover:text-green-800">
-            <Link href={"/"}>Home</Link>
+            <Link onClick={toggleNavbar} href={"/"}>
+              Beranda
+            </Link>
           </li>
           <li className="border-b-2 hover:border-green-400 hover:text-green-800">
-            <Link href={"/about"}>About</Link>
+            <Link onClick={toggleNavbar} href={"/"}>
+              Tentang Kami
+            </Link>
           </li>
           <li className="border-b-2 hover:border-green-400 hover:text-green-800">
-            <Link href={"/contact"}>Contact</Link>
+            <Link onClick={toggleNavbar} href={"/"}>
+              Buku Qiroah
+            </Link>
+          </li>
+          <li className="hidden border-b-2 hover:border-green-400 hover:text-green-800">
+            <Link onClick={toggleNavbar} href={"/"}>
+              Program
+            </Link>
+          </li>
+          <li className="border-b-2 hover:border-green-400 hover:text-green-800">
+            <Link onClick={toggleNavbar} href={"/"}>
+              Artikel
+            </Link>
+          </li>
+          <li className="border-b-2 hover:border-green-400 hover:text-green-800">
+            <Link onClick={toggleNavbar} href={"/"}>
+              Kontak
+            </Link>
           </li>
         </ul>
         <div>
           <button
-            className="bg-green-500 text-white w-96 py-2  font-bold"
+            className="w-96 bg-green-500 py-2 font-bold  text-white"
             onClick={toggleNavbar}
           >
             Donasi

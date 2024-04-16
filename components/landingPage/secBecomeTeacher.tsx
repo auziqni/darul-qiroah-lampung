@@ -15,11 +15,11 @@ export default function SecBecomeTeacher({
       )}
     >
       <div className="absolute inset-0  h-screen w-screen bg-green-500 opacity-70"></div>
-      <div className="z-10 flex flex-col items-center ">
+      <div className="z-10 flex flex-col items-center gap-5 lg:flex-row lg:items-center lg:justify-center ">
         <h2 className="text-u20 font-bold text-white ">
           Ayo Cerahkan Dunia Dengan Belajar dan Mengajar AlQuran
         </h2>
-        <ButtonJoinUs className="mt-5 max-w-[340px] ">
+        <ButtonJoinUs className="lg max-w-[340px] hover:text-white ">
           ayo jadi guru
         </ButtonJoinUs>
       </div>

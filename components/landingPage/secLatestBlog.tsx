@@ -14,7 +14,7 @@ const newpost: Post[] = posts
   .sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   })
-  .slice(0, 3);
+  .slice(0, 2);
 // const newpost = posts.slice(0, 2);
 
 export default function SecLatestBlog({ className }: { className?: string }) {
@@ -35,7 +35,7 @@ export default function SecLatestBlog({ className }: { className?: string }) {
         </SectionHead>
       </div>
 
-      <div className="grid grid-cols-1 justify-items-center gap-[15px] ">
+      <div className="grid grid-cols-1 justify-items-center gap-[15px] lg:grid-cols-2 ">
         {newpost.map((post) => (
           <CardPost key={post.id} post={post} />
         ))}

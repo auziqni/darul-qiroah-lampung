@@ -10,7 +10,19 @@ export function HeroTitle({ children, className }: CustomHeadingProps) {
   return (
     <h1
       className={twMerge(
-        `text-3xl font-bold tracking-wide text-textheading md:text-u39 xl:text-u61`,
+        `text-3xl font-bold tracking-wide text-textheading md:text-u39 xl:text-u61 xl:leading-relaxed`,
+        className,
+      )}
+    >
+      {children}
+    </h1>
+  );
+}
+export function SectionHead({ children, className }: CustomHeadingProps) {
+  return (
+    <h1
+      className={twMerge(
+        `text-center text-2xl font-bold tracking-wide text-textheading sm:text-left lg:text-u28`,
         className,
       )}
     >
@@ -22,24 +34,11 @@ export function SectionTag({ children, className }: CustomHeadingProps) {
   return (
     <h2
       className={twMerge(
-        `text-center text-sm font-bold text-green-500 sm:text-left`,
+        `text-center text-sm font-bold text-green-500 sm:text-left lg:text-u16`,
         className,
       )}
     >
       {children}
     </h2>
-  );
-}
-
-export function SectionHead({ children, className }: CustomHeadingProps) {
-  return (
-    <h1
-      className={twMerge(
-        `text-center text-2xl font-bold tracking-wide text-textheading sm:text-left`,
-        className,
-      )}
-    >
-      {children}
-    </h1>
   );
 }

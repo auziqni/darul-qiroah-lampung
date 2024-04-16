@@ -7,9 +7,9 @@ import { HeroTitle } from "./textStyling";
 export default function SecHero({ className }: { className?: string }) {
   return (
     <div
-      className={`${className} relative flex w-screen flex-row overflow-clip sm:justify-evenly  `}
+      className={`${className} relative flex h-[500px]  flex-row  overflow-clip sm:h-[600px] sm:justify-evenly lg:h-[700px]  `}
     >
-      <div className=" z-10 flex min-w-[320px] flex-col gap-5 px-6 pb-20 pt-[65px] ">
+      <div className=" z-10 flex h-full min-w-[320px] -translate-y-10 flex-col justify-center gap-5 px-6 pt-[65px] sm:ml-20">
         <HeroTitle className="">
           Pendidikan AlQuran <br /> Investasi Abadi
         </HeroTitle>
@@ -18,9 +18,9 @@ export default function SecHero({ className }: { className?: string }) {
         </h2>
 
         <div className=" mt-5 flex gap-3 xl:text-lg">
-          <ButtonPrimary className="hidden bg-bgfooter text-white md:block">
+          {/* <ButtonPrimary className="hidden bg-bgfooter text-white md:block">
             daftar sekarang
-          </ButtonPrimary>
+          </ButtonPrimary> */}
           <ButtonPrimary>donasi</ButtonPrimary>
         </div>
       </div>

@@ -6,9 +6,12 @@ import { BiLogoTwitter, BiLogoInstagram, BiLogoFacebook } from "react-icons/bi";
 export default function Footer() {
   return (
     <footer id="footer" className=" bg-bgfooter px-10 pt-10 text-white ">
-      <div id="link" className="grid grid-cols-1 gap-14 text-textfooter">
+      <div
+        id="link"
+        className="grid grid-cols-1 gap-14 text-textfooter md:grid-cols-2 lg:grid-cols-4"
+      >
         {/* logo */}
-        <div className=" flex flex-row gap-5 ">
+        <div className="relative flex h-fit flex-row gap-5 ">
           <Link id="nav-logo" className="" href={"/"}>
             <Image
               src="/logo.png"
@@ -28,14 +31,42 @@ export default function Footer() {
         <div id="navigation">
           <h3 className=" mb-6 text-xl text-white ">Navigasi</h3>
 
-          <ul className=" text flex flex-col gap-4 text-slate-400 ">
-            <li>Beranda</li>
-            <li>Tentang Kami</li>
-            <li>Buku Qiroah</li>
-            <li>Program</li>
-            <li>Artikel</li>
-            <li>Kontak</li>
-            <li>Donasi</li>
+          <ul className=" text flex flex-col gap-4 text-slate-400  ">
+            <li>
+              <Link href={"/"} className="hover:text-green-400">
+                Beranda
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-green-400">
+                Tentang Kami
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-green-400">
+                Buku Qiroah
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-green-400">
+                Program
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-green-400">
+                Artikel
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-green-400">
+                Kontak
+              </Link>
+            </li>
+            <li>
+              <Link href={"/"} className="hover:text-green-400">
+                Donasi
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -53,9 +84,25 @@ export default function Footer() {
           <h3 className=" mb-6 text-xl text-white ">Media Sosial</h3>
 
           <div className=" flex flex-row gap-3">
-            <BiLogoTwitter className="cursor-pointer text-3xl text-slate-400" />
-            <BiLogoInstagram className="cursor-pointer text-3xl text-slate-400" />
-            <BiLogoFacebook className="cursor-pointer text-3xl text-slate-400" />
+            <Link
+              className="cursor-pointer text-3xl text-slate-400 hover:text-green-400"
+              href={""}
+            >
+              {" "}
+              <BiLogoTwitter />
+            </Link>
+            <Link
+              className="cursor-pointer text-3xl text-slate-400 hover:text-green-400"
+              href={""}
+            >
+              <BiLogoInstagram />
+            </Link>
+            <Link
+              className="cursor-pointer text-3xl text-slate-400 hover:text-green-400"
+              href={""}
+            >
+              <BiLogoFacebook />
+            </Link>
           </div>
         </div>
       </div>

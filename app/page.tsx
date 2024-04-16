@@ -4,6 +4,7 @@ import Image from "next/image";
 import SecHero from "@/components/landingPage/secHero";
 import SecOurMission from "@/components/landingPage/secOurMission";
 import SecAboutUs from "@/components/landingPage/secAboutUs";
+import SecBecomeTeacher from "@/components/landingPage/secBecomeTeacher";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <SecHero />
       <SecOurMission />
       <SecAboutUs />
+      <SecBecomeTeacher />
 
       {/* <div id="hero" className="relative">
         <div className=" flex flex-col   px-10 pt-40 gap-5 pb-20">

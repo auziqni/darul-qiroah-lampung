@@ -19,3 +19,16 @@ export function ButtonPrimary({ children, className }: CustomHeadingProps) {
     </Button>
   );
 }
+
+export function ButtonJoinUs({ children, className }: CustomHeadingProps) {
+  return (
+    <Button
+      className={twMerge(
+        " mx h-[37px] w-full bg-white px-14 py-4 font-bold capitalize text-black",
+        className,
+      )}
+    >
+      {children}
+    </Button>
+  );
+}

@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// todo : sitemap, robots.txt
 export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",

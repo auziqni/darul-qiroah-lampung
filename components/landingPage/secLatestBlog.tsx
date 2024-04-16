@@ -26,12 +26,16 @@ export default function SecLatestBlog({ className }: { className?: string }) {
         className,
       )}
     >
-      <div className=" flex flex-col gap-3 text-center  ">
-        <SectionTag>Aktivitas Terkini Kami</SectionTag>
-        <SectionHead>Dokumentasi dari Acara Terkini</SectionHead>
+      <div className=" flex flex-col gap-3 text-center ">
+        <SectionTag className="sm:text-center">
+          Aktivitas Terkini Kami
+        </SectionTag>
+        <SectionHead className="sm:text-center">
+          Dokumentasi dari Acara Terkini
+        </SectionHead>
       </div>
 
-      <div className="grid grid-cols-1 gap-[15px] ">
+      <div className="grid grid-cols-1 justify-items-center gap-[15px] ">
         {newpost.map((post) => (
           <CardPost key={post.id} post={post} />
         ))}

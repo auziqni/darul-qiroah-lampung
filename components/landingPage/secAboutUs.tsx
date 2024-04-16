@@ -14,14 +14,14 @@ export default function SecAboutUs({ className }: { className?: string }) {
       )}
     >
       <div id="heading" className="flex  flex-col gap-[30px]">
-        <div className=" flex flex-col gap-3 text-center  ">
+        <div className=" flex flex-col gap-4 sm:mx-[25px] ">
           <SectionTag>Tentang Yayasan Kami</SectionTag>
           <SectionHead>
             Kami Meperjuangkan Pendidikan, Kemanusiaan, Dan Kebajikan
           </SectionHead>
         </div>
 
-        <div className="flex flex-col gap-3 text-justify">
+        <div className="flex flex-col gap-3 text-justify sm:mx-[25px]">
           <p className=" ">
             Selamat datang di{" "}
             <span className="cursor-pointer text-green-600 hover:text-blue-800">
@@ -44,9 +44,9 @@ export default function SecAboutUs({ className }: { className?: string }) {
             dan memberikan manfaat yang berkelanjutan bagi masyarakat Lampung
             dan luar Lampung .
           </p>
+          <ButtonPrimary className="">Donasi</ButtonPrimary>
         </div>
       </div>
-      <ButtonPrimary className="">Donasi</ButtonPrimary>
 
       <div className="relative flex h-fit flex-row items-end justify-end border">
         <div className="relative z-10 hidden h-[190px] w-[165px] translate-x-1/3  translate-y-1/3 overflow-clip rounded-bl-lg border-r-8 border-t-8 border-utama lg:block">

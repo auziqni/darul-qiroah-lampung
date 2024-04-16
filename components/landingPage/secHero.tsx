@@ -6,8 +6,10 @@ import { HeroTitle } from "./textStyling";
 
 export default function SecHero({ className }: { className?: string }) {
   return (
-    <div className={`${className} relative flex flex-row justify-evenly  `}>
-      <div className=" flex min-w-[320px] flex-col gap-5 px-10 pb-20 pt-40 ">
+    <div
+      className={`${className} relative flex w-screen flex-row overflow-clip sm:justify-evenly  `}
+    >
+      <div className=" z-10 flex min-w-[320px] flex-col gap-5 px-6 pb-20 pt-[65px] ">
         <HeroTitle className="">
           Pendidikan AlQuran <br /> Investasi Abadi
         </HeroTitle>
@@ -23,7 +25,7 @@ export default function SecHero({ className }: { className?: string }) {
         </div>
       </div>
 
-      <div className="relative max-w-[1000px] flex-1">
+      <div className="absolute right-0 h-96 w-1/3 max-w-[1000px] flex-1 translate-x-1/2 sm:relative sm:h-auto sm:w-auto sm:translate-x-0 ">
         {/* <div className="w-[4000px] bg-blue-300">asdf</div> */}
         <Image
           src={"/images/hero.png"}

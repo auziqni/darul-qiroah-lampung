@@ -20,7 +20,7 @@ export default function CardPost({ post }: { post: Post }) {
   }
 
   return (
-    <div className=" w-full overflow-clip rounded-xl shadow-md">
+    <div className=" w-full overflow-clip rounded-xl shadow-md sm:max-w-[510px]">
       <div className="relative h-[220px] w-full  ">
         <Image src={post.image} alt="bg" fill objectFit="cover" />
         <div className="absolute bottom-0 left-0 flex h-[55px] w-[103px] flex-row items-center justify-center gap-1 bg-emerald-500 text-white">

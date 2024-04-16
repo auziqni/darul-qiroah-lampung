@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-
 import SecHero from "@/components/landingPage/secHero";
 import SecOurMission from "@/components/landingPage/secOurMission";
 import SecAboutUs from "@/components/landingPage/secAboutUs";

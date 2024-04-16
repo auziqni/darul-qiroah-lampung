@@ -1,5 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tentang Darul Qiroah Lampung",
+  description:
+    "Darul Qiroah Lampung Berdiri Sejak 2019, memiliki VISI : ekonomi terbaik di zamannya dengan berdasarkan pemahaman ahlu sunnahwal jamaah. ",
+};
 
 export default function About() {
   return (

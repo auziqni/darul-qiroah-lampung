@@ -7,6 +7,7 @@ import Image from "next/image";
 import fs from "fs";
 import { revalidatePath, revalidateTag } from "next/cache";
 // import "@/styles/mdx.css";
+import type { Metadata, ResolvingMetadata } from "next";
 
 interface PostPageProps {
   params: {
@@ -21,17 +22,9 @@ async function getPostFromParams(params: PostPageProps["params"]) {
   return post;
 }
 
-export const generateStaticParams = () => {
-  return posts.map((post) => ({
-    params: {
-      slug: post.slug,
-    },
-  }));
-};
-
 export default async function BlogPost({ params }: PostPageProps) {
   const post = await getPostFromParams(params);
-  revalidatePath("/blog/[slug]", "page");
+
   let image = post?.image;
 
   fs.existsSync("public" + post?.image)
@@ -68,4 +61,20 @@ export default async function BlogPost({ params }: PostPageProps) {
       {/* {post.body} */}
     </article>
   );
+}
+
+export const generateStaticParams = () => {
+  return posts.map((post) => ({
+    params: {
+      slug: post.slug,
+    },
+  }));
+};
+
+export async function generateMetadata({ params }: PostPageProps) {
+  const post = await getPostFromParams(params);
+  return {
+    title: post?.title,
+    description: post?.description,
+  };
 }

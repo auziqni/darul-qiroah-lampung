@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "cara merakit pc",
+    "description": "cara merakit pc yang benar",
+    "image": "/images/posts/test.jpg",
+    "date": "2024-01-01",
+    "author": "admin",
+    "category": "teknologi",
+    "published": true,
+    "content": "content mock"
+  },
+  {
+    "id": 2,
+    "title": "Mengenal Teknologi 5G",
+    "description": "Pengenalan tentang teknologi jaringan 5G dan dampaknya pada perkembangan teknologi.",
+    "image": "/images/posts/test.jpg",
+    "date": "2021-02-15",
+    "author": "teknologi_editor",
+    "category": "teknologi",
+    "published": true
+  },
+  {
+    "id": 3,
+    "title": "Pengenalan Kecerdasan Buatan",
+    "description": "Artikel yang membahas konsep dasar kecerdasan buatan dan aplikasinya dalam berbagai bidang.",
+    "image": "/images/posts/test.jpg",
+    "date": "2021-03-10",
+    "author": "AI_enthusiast",
+    "category": "teknologi",
+    "published": true
+  },
+  {
+    "id": 4,
+    "title": "Panduan Memilih Laptop untuk Desain Grafis",
+    "description": "Tips dan panduan untuk memilih laptop yang cocok untuk desain grafis dan editing video.",
+    "image": "/images/posts/test.jpg",
+    "date": "2021-04-20",
+    "author": "graphic_designer",
+    "category": "teknologi",
+    "published": true
+  },
+  {
+    "id": 5,
+    "title": "Memahami Blockchain: Konsep dan Aplikasi",
+    "description": "Penjelasan mendalam tentang konsep dasar teknologi blockchain dan berbagai aplikasinya di luar cryptocurrency.",
+    "image": "/images/posts/test.jpg",
+    "date": "2021-05-05",
+    "author": "blockchain_enthusiast",
+    "category": "teknologi",
+    "published": true
+  }
+]

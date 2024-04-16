@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Darul Qiroah Lampung
 
-## Getting Started
+Darul Qiroah Lampung adalah organisasi non-profit yang bergerak di bidang pendidikan dan kemanusiaan di Provinsi Lampung, Indonesia.
 
-First, run the development server:
+## Tentang Kami
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Darul Qiroah Lampung didirikan pada tahun 2015 dengan tujuan untuk meningkatkan kualitas pendidikan dan kesejahteraan masyarakat di Lampung. Kami fokus pada program-program berikut:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Pendidikan: Mendirikan lembaga pendidikan, memberikan beasiswa, dan mengembangkan kurikulum yang inovatif.
+2. Kemanusiaan: Menyediakan bantuan bencana, program kesehatan, dan inisiatif pemberdayaan masyarakat.
+3. Lingkungan: Menjalankan program konservasi lingkungan dan edukasi terkait isu-isu lingkungan.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Visi dan Misi
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Visi:**
+Menjadi organisasi non-profit terkemuka di Lampung dalam bidang pendidikan dan kemanusiaan.
 
-## Learn More
+**Misi:**
 
-To learn more about Next.js, take a look at the following resources:
+1. Meningkatkan akses dan kualitas pendidikan di Lampung.
+2. Memberdayakan masyarakat melalui program-program kemanusiaan.
+3. Melestarikan lingkungan dan mendorong kesadaran lingkungan di Lampung.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Kegiatan Terbaru
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Pembangunan Sekolah Dasar Darul Qiroah di Kabupaten Pesawaran (April 2024)
+- Pemberian Beasiswa Pendidikan untuk 50 Siswa Berprestasi (Maret 2024)
+- Distribusi Bantuan Kemanusiaan untuk Korban Banjir di Kota Bandar Lampung (Februari 2024)
 
-## Deploy on Vercel
+## Bergabung dengan Kami
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Anda dapat terlibat dalam kegiatan Darul Qiroah Lampung dengan menjadi:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Relawan**: Daftar sebagai relawan kami dan bantu kami dalam berbagai kegiatan.
+- **Donatur**: Anda dapat menyumbangkan dana untuk mendukung program-program kami.
+- **Mitra Kerjasama**: Kami terbuka untuk bekerja sama dengan organisasi lain yang memiliki visi dan misi yang sejalan.
+
+Untuk informasi lebih lanjut, silahkan kunjungi [website kami](https://www.darulqiroahlampung.org) atau hubungi kami di [email@darulqiroahlampung.org](mailto:email@darulqiroahlampung.org).
+
+## Hubungi Kami
+
+**Alamat Kantor:**
+Jl. Raya Kedaton No. 123, Bandar Lampung 35000, Indonesia
+
+**Telepon:** +62 721 123456
+**Email:** email@darulqiroahlampung.org

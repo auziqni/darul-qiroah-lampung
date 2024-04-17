@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Beranda",
+    "link": "/"
+  },
+  {
+    "id": 2,
+    "title": "Tentang Kami",
+    "link": "/about"
+  },
+  {
+    "id": 3,
+    "title": "Buku Qiroah",
+    "link": "/"
+  },
+  {
+    "id": 4,
+    "title": "Program",
+    "link": "/"
+  },
+  {
+    "id": 5,
+    "title": "Artikel",
+    "link": "/blog"
+  },
+  {
+    "id": 6,
+    "title": "Kontak",
+    "link": "/"
+  },
+  {
+    "id": 7,
+    "title": "Donasi",
+    "link": "/donasi"
+  }
+]

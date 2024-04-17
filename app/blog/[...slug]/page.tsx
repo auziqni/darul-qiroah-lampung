@@ -1,10 +1,10 @@
 import React from "react";
+import fs from "fs";
 import { posts } from "#site/content";
 import { notFound } from "next/navigation";
 import { MDXContent } from "@/components/blog/mdx-components";
 import { Tag } from "@/components/blog/tag";
 import Image from "next/image";
-import fs from "fs";
 import dataseo from "@/content/static/seo.json";
 
 interface PostPageProps {
@@ -31,7 +31,7 @@ export default async function BlogPost({ params }: PostPageProps) {
 
   if (fs.existsSync("public" + image)) {
   } else {
-    image = "/images/placeholder.png";
+    image = "/images/about.jpg";
   }
 
   image ? image : (image = "/images/placeholder.png");

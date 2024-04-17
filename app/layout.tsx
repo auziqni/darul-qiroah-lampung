@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Helpscreen from "@/components/helpscreen";
 import Footer from "@/components/footer";
+import dataseo from "@/content/static/seo.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,33 +13,37 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  title: "Yayasan Darul Qiroah Lampung",
-  description:
-    "Qiroah Lampung adalah sebuah yayasan non-profit yang berfokus pada pendidikan agama khususnya pembelajaran Al-Quran, serta sebagai tempat penyalur donasi untuk mendukung program-program pendidikan dan kegiatan sosial di Lampung.",
-  generator: "Next.js",
-  applicationName: "Darul Qiroah Lampung",
-  authors: [
-    { name: "Teknisee", url: "https://www.teknisee.com/" },
-    { name: "auziqni", url: "https://www.auziqni.com/" },
-  ],
-  creator: "Muhammad Auziqni",
-  publisher: "Teknisee",
+  title: dataseo.title,
+  description: dataseo.description,
+  generator: dataseo.generator,
+  applicationName: dataseo.applicationName,
+  authors: dataseo.authors,
+  creator: dataseo.creator,
+  publisher: dataseo.publisher,
   referrer: "origin-when-cross-origin",
-  keywords: [
-    "darul qiroah lampung",
-    "qiroah lampung",
-    "yayasan lampung",
-    "pendidikan agama",
-    "al-quran lampung",
-    "donasi bandar lampung",
-    "kegiatan sosial",
-    "lampung",
-    "rajabasa",
-    "bandar lampung",
-    "buku qiroah",
-    "donasi bandar lampung",
-    "mengaji bandar lampung",
-  ],
+  keywords: dataseo.keywords,
+  openGraph: {
+    title: dataseo.title,
+    url: dataseo.url,
+    type: "website",
+    locale: dataseo.locale,
+    siteName: dataseo.title,
+    description: dataseo.description,
+    images: [
+      {
+        url: dataseo.url + dataseo.logo,
+        width: 800,
+        height: 800,
+        alt: "logo",
+      },
+      {
+        url: dataseo.url + dataseo.logohd,
+        width: 1600,
+        height: 1600,
+        alt: "logohd",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

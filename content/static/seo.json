@@ -1,7 +1,7 @@
 {
   "url": "https://dql.auziqni.com",
-  "title": "Yayasan Darul Qiroah Lampung",
-  "description": "Qiroah Lampung adalah sebuah yayasan non-profit yang berfokus pada pendidikan agama khususnya pembelajaran Al-Quran, serta sebagai tempat penyalur donasi untuk mendukung program-program pendidikan dan kegiatan sosial di Lampung.",
+  "title": "Darul Qiroah Lampung",
+  "description": "Darul Qiroah Lampung adalah sebuah yayasan non-profit yang berfokus pada pendidikan agama khususnya pembelajaran Al-Quran, serta sebagai tempat penyalur donasi untuk mendukung program-program pendidikan dan kegiatan sosial di Lampung.",
   "generator": "Next.js",
   "applicationName": "Darul Qiroah Lampung",
   "authors": [
@@ -12,10 +12,11 @@
   "publisher": "Teknisee",
   "referrer": "origin-when-cross-origin",
   "keywords": [
+    "qiroah",
+    "darul qiroah",
     "darul qiroah lampung",
     "qiroah lampung",
     "yayasan lampung",
-    "pendidikan agama",
     "al-quran lampung",
     "donasi bandar lampung",
     "kegiatan sosial",

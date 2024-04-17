@@ -23,11 +23,16 @@ async function getPostFromParams(params: PostPageProps["params"]) {
 export default async function BlogPost({ params }: PostPageProps) {
   const post = await getPostFromParams(params);
 
-  let image;
+  let image = post?.image;
 
-  fs.existsSync("public" + post?.image)
-    ? (image = post?.image)
-    : (image = "/images/about.jpg");
+  // fs.existsSync("public" + post?.image)
+  //   ? (image = post?.image)
+  //   : (image = "/images/about.jpg");
+
+  if (fs.existsSync("public" + image)) {
+  } else {
+    image = "/images/placeholder.png";
+  }
 
   image ? image : (image = "/images/placeholder.png");
 

@@ -25,9 +25,9 @@ export default async function BlogPost({ params }: PostPageProps) {
 
   let image = post?.image;
 
-  fs.existsSync("public")
-    ? (image = post?.image)
-    : (image = "/images/placeholder.png");
+  // fs.existsSync("public " + post?.image)
+  //   ? (image = post?.image)
+  //   : (image = "/images/placeholder.png");
 
   image ? image : (image = "/images/placeholder.png");
 

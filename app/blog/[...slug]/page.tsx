@@ -6,6 +6,7 @@ import { Tag } from "@/components/blog/tag";
 import Image from "next/image";
 import fs from "fs";
 import dataseo from "@/content/static/seo.json";
+
 interface PostPageProps {
   params: {
     slug: string[];

@@ -1,5 +1,6 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import data from "@/content/landingpage/data.json";
 
 export default function SecData({ className }: { className?: string }) {
   return (
@@ -11,10 +12,14 @@ export default function SecData({ className }: { className?: string }) {
     >
       <div className="absolute inset-0  h-screen w-screen bg-green-600 opacity-70"></div>
       <div className="z-10  grid grid-cols-1 gap-[75px] text-white md:grid-cols-2 lg:grid-cols-4">
-        <Content angka={150} desc={"Guru Bimbingan"} />
-        <Content angka={21} desc={"Seminar"} />
-        <Content angka={50000000} desc={"Donasi"} className="text-u31" />
-        <Content angka={312} desc={"Kegiatan Sosial"} />
+        <Content angka={data[0].value} desc={data[0].context} />
+        <Content angka={data[1].value} desc={data[1].context} />
+        <Content
+          angka={data[2].value}
+          desc={data[2].context}
+          className="text-u31"
+        />
+        <Content angka={data[3].value} desc={data[3].context} />
       </div>
     </div>
   );

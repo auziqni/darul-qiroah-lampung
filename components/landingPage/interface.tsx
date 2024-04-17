@@ -5,11 +5,17 @@ import { twMerge } from "tailwind-merge";
 interface CustomHeadingProps {
   children: React.ReactNode;
   className?: string; // Menambahkan properti className opsional
+  onClick?: () => void;
 }
 
-export function ButtonPrimary({ children, className }: CustomHeadingProps) {
+export function ButtonPrimary({
+  children,
+  className,
+  onClick,
+}: CustomHeadingProps) {
   return (
     <Button
+      onClick={onClick}
       className={twMerge(
         " w-fit bg-green-500 px-14 py-4 font-bold capitalize",
         className,

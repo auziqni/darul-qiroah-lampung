@@ -2,8 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BiLogoTwitter, BiLogoInstagram, BiLogoFacebook } from "react-icons/bi";
+import navigasi from "@/content/static/footer-navigation.json";
+import kontak from "@/content/static/footer-kontak.json";
 
 export default function Footer() {
+  // const { navigasi, kontak } = footer();
   return (
     <footer id="footer" className=" bg-bgfooter px-10 pt-10 text-white ">
       <div
@@ -32,51 +35,22 @@ export default function Footer() {
           <h3 className=" mb-6 text-xl text-white ">Navigasi</h3>
 
           <ul className=" text flex flex-col gap-4 text-slate-400  ">
-            <li>
-              <Link href={"/"} className="hover:text-green-400">
-                Beranda
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"} className="hover:text-green-400">
-                Tentang Kami
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"} className="hover:text-green-400">
-                Buku Qiroah
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"} className="hover:text-green-400">
-                Program
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"} className="hover:text-green-400">
-                Artikel
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"} className="hover:text-green-400">
-                Kontak
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"} className="hover:text-green-400">
-                Donasi
-              </Link>
-            </li>
+            {navigasi.map((nav) => (
+              <li key={nav.id}>
+                <Link href={nav.link} className="hover:text-green-400">
+                  {nav.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div id="contact">
           <h3 className=" mb-6 text-xl text-white">Kontak</h3>
           <ul className=" text flex flex-col gap-4 text-slate-400 ">
-            <li>Email : darulqiroahlampung@gmail.com</li>
-            <li>Phone : +62 822 0000 0000</li>
-            Alamat : Jl. Kapten Abdul Haq No.17A, Gang Banten, Kec. Rajabasa,
-            Kota Bandar Lampung, Lampung 35144
+            <li className="hover:text-green-400">Email : {kontak.email}</li>
+            <li className="hover:text-green-400">Phone : {kontak.telepon}</li>
+            <li className="hover:text-green-400">Alamat : {kontak.alamat}</li>
           </ul>
         </div>
 
@@ -86,20 +60,19 @@ export default function Footer() {
           <div className=" flex flex-row gap-3">
             <Link
               className="cursor-pointer text-3xl text-slate-400 hover:text-green-400"
-              href={""}
+              href={"/"}
             >
-              {" "}
               <BiLogoTwitter />
             </Link>
             <Link
               className="cursor-pointer text-3xl text-slate-400 hover:text-green-400"
-              href={""}
+              href={"/"}
             >
               <BiLogoInstagram />
             </Link>
             <Link
               className="cursor-pointer text-3xl text-slate-400 hover:text-green-400"
-              href={""}
+              href={"/"}
             >
               <BiLogoFacebook />
             </Link>

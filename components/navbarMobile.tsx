@@ -66,12 +66,11 @@ export default function NavbarMobile({ className }: { className?: string }) {
           </li>
         </ul>
         <div>
-          <button
-            className="w-96 bg-green-500 py-2 font-bold  text-white"
-            onClick={toggleNavbar}
-          >
-            Donasi
-          </button>
+          <Link href={"/donasi"}>
+            <button className="w-96 bg-green-500 py-2 font-bold  text-white">
+              Donasi
+            </button>
+          </Link>
         </div>
       </div>
       {/* navigation mobile menu end */}

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Artikel Darul Qiroah Lampung",
   description:
     "Artikel-artikel terbaru dari Darul Qiroah Lampung, berbagai topik menarik seputar pendidikan, keislaman, dan kegiatan sosial.",
+  openGraph: {},
 };
 
 export default function Blog() {

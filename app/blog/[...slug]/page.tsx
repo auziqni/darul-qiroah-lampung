@@ -5,10 +5,7 @@ import { MDXContent } from "@/components/blog/mdx-components";
 import { Tag } from "@/components/blog/tag";
 import Image from "next/image";
 import fs from "fs";
-import { revalidatePath, revalidateTag } from "next/cache";
-// import "@/styles/mdx.css";
-import type { Metadata, ResolvingMetadata } from "next";
-
+import dataseo from "@/content/static/seo.json";
 interface PostPageProps {
   params: {
     slug: string[];
@@ -76,5 +73,18 @@ export async function generateMetadata({ params }: PostPageProps) {
   return {
     title: post?.title,
     description: post?.description,
+    openGraph: {
+      title: post?.title,
+      type: "article",
+      description: post?.description,
+      images: [
+        {
+          url: dataseo.url + post?.image,
+          width: 800,
+          height: 600,
+          alt: post?.title,
+        },
+      ],
+    },
   };
 }

@@ -30,7 +30,7 @@ export function CardPost({
     <Link
       href={`/blog/${post.slug}`}
       className={twMerge(
-        " w-full cursor-pointer overflow-clip rounded-xl shadow-md sm:max-w-[510px]",
+        " w-full cursor-pointer overflow-clip rounded-xl shadow-md sm:max-w-[510px] ",
         className,
       )}
     >

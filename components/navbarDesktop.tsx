@@ -23,7 +23,9 @@ export default function NavbarDesktop({ className }: { className?: string }) {
           <Link href={"/blog"}>Artikel</Link>
         </li>
       </ul>
-      <ButtonPrimary>Donasi</ButtonPrimary>
+      <Link href={"/donasi"}>
+        <ButtonPrimary>Donasi</ButtonPrimary>
+      </Link>
     </div>
   );
 }

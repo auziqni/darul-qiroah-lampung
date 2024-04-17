@@ -9,6 +9,7 @@ const computedFields = <T extends { path: string; title: string }>(
   ...data,
   pathAsParams: data.path.split("/").slice(1).join("/"),
   slug: data.title.toLowerCase().replace(/ /g, "-"),
+  id: parseInt(data.path.split("/").slice(-1)[0].replace(".mdx", "")),
 });
 
 const posts = defineCollection({
@@ -16,7 +17,6 @@ const posts = defineCollection({
   pattern: "blog/**/*.mdx",
   schema: s
     .object({
-      id: s.number(),
       title: s.string().max(99),
       description: s.string().max(999).optional(),
       image: s.string(),

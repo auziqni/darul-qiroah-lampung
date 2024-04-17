@@ -29,11 +29,6 @@ export default async function BlogPost({ params }: PostPageProps) {
   //   ? (image = post?.image)
   //   : (image = "/images/about.jpg");
 
-  if (fs.existsSync("public" + image)) {
-  } else {
-    image = "/images/about.jpg";
-  }
-
   image ? image : (image = "/images/placeholder.png");
 
   if (!post) {

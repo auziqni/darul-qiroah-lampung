@@ -1,0 +1,32 @@
+[
+  {
+    "nama": "Muhammad Saleh",
+    "posisi": "Pemuda Gg.Yahya",
+    "katanya": "Buku Qiroah sungguh luar biasa! Sebagai seseorang yang awalnya sama sekali tidak bisa membaca Alquran, buku ini memberikan langkah-langkah yang jelas dan mudah dipahami untuk mempelajari huruf-hurufnya. Sekarang, saya merasa lebih percaya diri dalam membaca Alquran.",
+    "foto": "/images/people/people1.jpg"
+  },
+  {
+    "nama": "Mulya Anggit",
+    "posisi": "Pemuda Gg.Yahya",
+    "katanya": "Saya sangat bersyukur menemukan Buku Qiroah. Selain belajar membaca Alquran, buku ini juga memberikan pemahaman yang dalam tentang ajaran dasar Islam. Ini adalah panduan yang sempurna bagi siapa pun yang ingin memulai perjalanan mereka dalam memahami Alquran.",
+    "foto": "/images/people/people2.jpg"
+  },
+  {
+    "nama": "Ahmad Sutomi",
+    "posisi": "Pemuda Gg.Yahya",
+    "katanya": "Buku Qiroah membantu saya mengatasi kesulitan dalam belajar membaca Alquran. Materi yang disajikan sangat sistematis dan mudah dipahami, bahkan untuk pemula sekalipun. Saya sangat merekomendasikan buku ini kepada siapa pun yang ingin memperdalam hubungannya dengan Alquran.",
+    "foto": "/images/people/people3.jpg"
+  },
+  {
+    "nama": "Jayadi Nasution",
+    "posisi": "Pemuda Gg.Yahya",
+    "katanya": "Sebagai seorang ibu rumah tangga yang sibuk, Buku Qiroah menjadi teman setia saya dalam belajar Alquran. Dengan pendekatan yang ramah pengguna dan latihan-latihan yang efektif, saya dapat meningkatkan kemampuan membaca Alquran saya dengan cepat. Terima kasih, Buku Qiroah!",
+    "foto": "/images/people/people4.jpg"
+  },
+  {
+    "nama": "Rahmat Hidayat",
+    "posisi": "Pemuda Gg.Yahya",
+    "katanya": "Buku Qiroah adalah panduan yang sangat berguna bagi saya dalam memperbaiki bacaan Alquran saya. Dari dasar-dasar huruf hingga melafalkan ayat-ayat dengan benar, buku ini memberikan semua yang saya perlukan untuk meningkatkan kualitas bacaan saya. Sungguh sangat direkomendasikan!",
+    "foto": "/images/people/people5.jpg"
+  }
+]

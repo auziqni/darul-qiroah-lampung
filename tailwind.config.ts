@@ -15,6 +15,7 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
+        "2ss": "550px",
         "2xl": "1400px",
       },
     },
@@ -60,6 +61,7 @@ const config = {
         bgsecondary: "#F8FCFF",
         bgfooter: "#010A1F",
         textfooter: "#868C98",
+        bookhero: "#FFF4DF",
       },
       borderRadius: {
         lg: "var(--radius)",

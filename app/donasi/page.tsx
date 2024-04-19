@@ -28,6 +28,7 @@ export default function Donasi() {
       <div className=" relative mx-4  my-6 flex flex-col overflow-clip">
         <div className="absolute right-0 h-full w-1/2 ">
           <Image
+            loading="lazy"
             src={"/images/bgpattern.png"}
             alt="qr"
             fill

@@ -16,7 +16,7 @@ export default function NavbarDesktop({ className }: { className?: string }) {
           <Link href={"/about"}>Tentang Kami</Link>
         </li>
         <li className="border-green-500 hover:border-b hover:text-green-500">
-          <Link href={"/"}>Buku Qiroah</Link>
+          <Link href={"/book"}>Buku Qiroah</Link>
         </li>
 
         <li className="border-green-500 hover:border-b hover:text-green-500">

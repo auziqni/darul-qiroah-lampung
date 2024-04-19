@@ -4,11 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import NavbarDesktop from "./navbarDesktop";
 import NavbarMobile from "./navbarMobile";
+import { twMerge } from "tailwind-merge";
 
-export default function Navbar() {
+export default function Navbar({ className }: { className?: string }) {
   return (
     <nav
-      className={` flex h-16 items-center justify-between bg-white  px-5 shadow-sm  md:px-12 md:shadow-lg lg:h-[110px] `}
+      className={twMerge(
+        ` z-30 flex h-16 items-center justify-between bg-white px-5 shadow-sm  md:px-12 md:shadow-lg lg:h-[110px] `,
+        className,
+      )}
     >
       {/* logo */}
       <Link

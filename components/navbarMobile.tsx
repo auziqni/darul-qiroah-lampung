@@ -45,7 +45,7 @@ export default function NavbarMobile({ className }: { className?: string }) {
             </Link>
           </li>
           <li className="border-b-2 hover:border-green-400 hover:text-green-800">
-            <Link onClick={toggleNavbar} href={"/"}>
+            <Link onClick={toggleNavbar} href={"/book"}>
               Buku Qiroah
             </Link>
           </li>

@@ -55,7 +55,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* <Helpscreen /> */}
-        <Navbar />
+        <Navbar className=" sticky top-0 " />
         {children}
         <Footer />
       </body>

@@ -37,28 +37,94 @@ export default function Donasi() {
           />
         </div>
 
-        <div className=" flex flex-col items-center gap-5 text-center">
-          <h2 className=" text-u20 font-bold text-green-500 lg:text-u31">
-            QRIS Code
-          </h2>
-          <p className="">
-            Salurkan donasi Anda melalui QRIS code di bawah ini{" "}
-          </p>
-          <div className=" h-1 w-10 bg-green-500" />
+        <div className=" mb-20 flex flex-col items-center">
+          <div className=" flex flex-col items-center gap-5 text-center">
+            <h2 className=" text-u20 font-bold text-green-500 lg:text-u31">
+              Bank
+            </h2>
+            <p className="">
+              Salurkan donasi Anda melalui QRIS code di bawah ini{" "}
+            </p>
+            <div className=" h-1 w-10 bg-green-500" />
+          </div>
+          <div className="flex max-w-sm flex-col border px-10">
+            <Image
+              alt="bank bri"
+              src={"/images/bri.svg"}
+              width={100}
+              height={40}
+              className="w-20"
+            />
+            <div className="relative w-full border border-green-300 ">
+              <p className="text-center text-green-500">5794-01-031877-535</p>
+              <p className="text-">YAYASAN DARUL QIROAH LAMPUNG</p>
+            </div>
+          </div>
         </div>
 
-        <div className="mx-auto flex flex-col items-center lg:flex-row">
-          <div className=" relative h-96 w-96">
-            <Image src={"/images/QRIS.png"} alt="qr" fill objectFit="contain" />
-          </div>
-          <div className=" flex flex-col justify-center gap-3 text-center lg:-translate-y-14 lg:text-left">
-            <h2 className="  text-u16 font-bold text-green-500 lg:text-u25">
-              Pundi Amal Peduli Kasih
+        {/* <div className="flex flex-col items-center">
+          <div className=" flex flex-col items-center gap-5 text-center">
+            <h2 className=" text-u20 font-bold text-green-500 lg:text-u31">
+              QRIS Code
             </h2>
-            <p className="lg:w-96">
-              Pemilik aplikasi bisa berdonasi dengan memindai (scanning) QR Code
-              berikut ini .
+            <p className="">
+              Salurkan donasi Anda melalui QRIS code di bawah ini{" "}
             </p>
+            <div className=" h-1 w-10 bg-green-500" />
+          </div>
+
+          <div className=" flex flex-col items-center lg:flex-row">
+            <div className=" relative h-96 w-96">
+              <Image
+                src={"/images/QRIS.png"}
+                alt="qr"
+                fill
+                objectFit="contain"
+              />
+            </div>
+
+            <div className=" flex flex-col justify-center gap-3 text-center lg:ml-10 lg:-translate-y-14 lg:text-left">
+              <h2 className="  text-u16 font-bold text-green-500 lg:text-u25">
+                Pundi Amal Peduli Kasih
+              </h2>
+              <p className="lg:w-96">
+                Pemilik aplikasi bisa berdonasi dengan memindai (scanning) QR
+                Code berikut ini .
+              </p>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="flex flex-col items-center">
+          <div className=" flex flex-col items-center gap-5 text-center">
+            <h2 className=" text-u20 font-bold text-green-500 lg:text-u31">
+              QRIS Code
+            </h2>
+            <p className="">
+              Salurkan donasi Anda melalui QRIS code di bawah ini{" "}
+            </p>
+            <div className=" h-1 w-10 bg-green-500" />
+          </div>
+
+          <div className=" flex flex-col items-center lg:flex-row">
+            <div className=" relative h-96 w-96">
+              <Image
+                src={"/images/QRIS.png"}
+                alt="qr"
+                fill
+                objectFit="contain"
+              />
+            </div>
+
+            <div className=" flex flex-col justify-center gap-3 text-center lg:ml-10 lg:-translate-y-14 lg:text-left">
+              <h2 className="  text-u16 font-bold text-green-500 lg:text-u25">
+                Pundi Amal Peduli Kasih
+              </h2>
+              <p className="lg:w-96">
+                Pemilik aplikasi bisa berdonasi dengan memindai (scanning) QR
+                Code berikut ini .
+              </p>
+            </div>
           </div>
         </div>
       </div>

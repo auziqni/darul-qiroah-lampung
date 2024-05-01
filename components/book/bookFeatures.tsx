@@ -29,9 +29,10 @@ export default function BookFeatures({ className }: { className?: string }) {
               Mudah Dipahami
             </h3>
             <p className="mt-3 max-w-sm text-center text-sm text-slate-500">
-              Ebo impresses you with fully responsiveness and highly
-              customization. We did it in combination of very clean and flexible
-              design.
+              menggunakan istilah istilah yang mudah dipahami dan flexsibel
+              dalam setiap pembelajaran. Konsep-konsep yang sulit dipahami
+              mungkin diulang dengan cara yang berbeda atau dengan metode yang
+              lebih sederhana
             </p>
           </div>
         </div>
@@ -43,9 +44,10 @@ export default function BookFeatures({ className }: { className?: string }) {
               Jadwal Belajar Singkat
             </h3>
             <p className="mt-3 max-w-sm text-center text-sm text-slate-500">
-              Ebo impresses you with fully responsiveness and highly
-              customization. We did it in combination of very clean and flexible
-              design.
+              Dengan metode yang efektif, waktu belajar yang singkat sudah cukup
+              untuk memahami materi yang diajarkan. Dengan metode ini siswa
+              tidak perlu menghabiskan waktu yang lama untuk memahami materi
+              yang diajarkan.
             </p>
           </div>
         </div>
@@ -57,9 +59,9 @@ export default function BookFeatures({ className }: { className?: string }) {
               Dilengkapi Ilmu dasar Islam
             </h3>
             <p className="mt-3 max-w-sm text-center text-sm text-slate-500">
-              Ebo impresses you with fully responsiveness and highly
-              customization. We did it in combination of very clean and flexible
-              design.
+              Materi yang diajarkan tidak hanya sebatas pada materi Al-Quran
+              saja, namun juga dilengkapi dengan ilmu dasar Islam yang
+              memperkuat pemahaman siswa terhadap Al-Quran.
             </p>
           </div>
         </div>

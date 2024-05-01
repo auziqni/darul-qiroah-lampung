@@ -11,7 +11,7 @@ export default function SecHero({ className }: { className?: string }) {
     >
       <div className=" z-10 flex h-full min-w-[320px] -translate-y-10 flex-col justify-center gap-5 px-6 pt-[65px] sm:ml-20">
         <HeroTitle className="">
-          Pendidikan AlQuran <br /> Investasi Abadi
+          Pendidikan Al-Qur&#39;an <br /> Investasi Abadi
         </HeroTitle>
         <h2 className=" text-md max-w-96 text-slate-400 lg:max-w-none  xl:text-lg ">
           Dengan Meningkatkan kompetensi guru mengaji untuk generasi qurani

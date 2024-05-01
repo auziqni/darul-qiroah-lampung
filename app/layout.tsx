@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   publisher: dataseo.publisher,
   referrer: "origin-when-cross-origin",
   keywords: dataseo.keywords,
+  verification: {
+    google: `wc7bKnLd9Z2t_o6gKih4nkYJWG8x9f5eGFC-BMrzZyI`,
+  },
   openGraph: {
     title: dataseo.title,
     url: dataseo.url,

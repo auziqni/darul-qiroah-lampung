@@ -56,10 +56,20 @@ export default function SecAboutUs({ className }: { className?: string }) {
 
       <div className="relative flex h-fit flex-row items-end justify-end  lg:justify-center">
         <div className="relative z-10 hidden h-[260px] w-[220px] translate-x-1/3  translate-y-1/3 overflow-clip rounded-bl-lg border-r-8 border-t-8 border-utama lg:block">
-          <Image src={"/images/about.jpg"} alt="bg" fill objectFit="cover" />
+          <Image
+            src={"/images/aboutus-child.jpg"}
+            alt="bg"
+            fill
+            objectFit="cover"
+          />
         </div>
         <div className=" relative h-64 w-full overflow-clip rounded-xl  lg:h-[400px] lg:w-[300px]">
-          <Image src={"/images/about.jpg"} alt="bg" fill objectFit="cover" />
+          <Image
+            src={"/images/aboutus-main.jpg"}
+            alt="bg"
+            fill
+            objectFit="cover"
+          />
         </div>
       </div>
     </div>

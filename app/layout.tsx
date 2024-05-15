@@ -8,11 +8,7 @@ import dataseo from "@/content/static/seo.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// todo : sitemap, robots.txt
 export const metadata: Metadata = {
-  icons: {
-    icon: "/favicon.ico",
-  },
   title: dataseo.title,
   description: dataseo.description,
   generator: dataseo.generator,
@@ -23,7 +19,7 @@ export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   keywords: dataseo.keywords,
   verification: {
-    google: `wc7bKnLd9Z2t_o6gKih4nkYJWG8x9f5eGFC-BMrzZyI`,
+    google: `qPMxG4FffInQzYzmI3C5d4Mf4MHFDzyCsPTOnrqS_Eg`,
   },
   openGraph: {
     title: dataseo.title,
